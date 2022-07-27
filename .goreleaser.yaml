@@ -26,5 +26,7 @@ builds:
     main: main.go
 archives:
   - format: zip
+    files:
+    - none*
 checksum:
   algorithm: sha256
