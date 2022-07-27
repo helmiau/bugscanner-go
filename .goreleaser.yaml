@@ -22,15 +22,9 @@ builds:
       - 5
       - 6
       - 7
+    binary: '{{ .ProjectName }}'
+    main: main.go
 archives:
-  - format_overrides:
-      - goos: windows
-        format: zip
+  - format: zip
 checksum:
   algorithm: sha256
-changelog:
-  sort: asc
-  filters:
-    exclude:
-      - '^docs:'
-      - '^test:'
