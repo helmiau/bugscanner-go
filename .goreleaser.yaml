@@ -23,13 +23,11 @@ builds:
       - 6
       - 7
 archives:
-    format_overrides:
+  - format_overrides:
       - goos: windows
         format: zip
 checksum:
-  name_template: "{{ .ProjectName }}_v{{ .Version }}_checksums.txt"
-snapshot:
-  name_template: "{{ incpatch .Version }}-next"
+  algorithm: sha256
 changelog:
   sort: asc
   filters:
