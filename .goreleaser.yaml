@@ -10,8 +10,11 @@ builds:
       - darwin
       - windows
     goarch:
+      - 386
       - amd64
       - arm64
+      - armv6
+      - armv7
 archives:
   - name_template: "{{ .ProjectName }}_v{{ .Version }}_{{ .Os }}_{{ .Arch }}"
     format_overrides:
